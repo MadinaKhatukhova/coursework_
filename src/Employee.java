@@ -43,6 +43,20 @@ public class Employee {
     public void setSalary(float salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", department=" + department +
+                ", salary=" + salary +
+                ", id=" + id +
+                '}';
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -54,14 +68,5 @@ public class Employee {
     @Override
     public int hashCode() {
         return Objects.hash(firstName, middleName, lastName, getFullName(), getDepartment(), getSalary(), getId());
-    }
-
-    @Override
-    public String toString() {
-
-        return "Сотрудник №"  + id + '\n' +
-                "ФИО: " + fullName + '\n' +
-                "Отдел: " + department + '\n' +
-                "Зарплата: " + salary + '\n';
     }
 }
