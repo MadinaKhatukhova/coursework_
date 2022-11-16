@@ -45,6 +45,19 @@ public class Employee {
     }
 
     @Override
+    public String toString() {
+        return "Employee{" +
+                "firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", department=" + department +
+                ", salary=" + salary +
+                ", id=" + id +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Employee)) return false;
@@ -57,16 +70,4 @@ public class Employee {
         return Objects.hash(firstName, middleName, lastName, getFullName(), getDepartment(), getSalary(), getId());
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "firstName='" + firstName + '\'' +
-                ", middleName='" + middleName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", department=" + department +
-                ", salary=" + salary +
-                ", id=" + id +
-                '}';
-    }
 }
