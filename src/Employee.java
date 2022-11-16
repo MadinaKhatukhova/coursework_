@@ -45,6 +45,19 @@ public class Employee {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Employee)) return false;
+        Employee employee = (Employee) o;
+        return getDepartment() == employee.getDepartment() && Float.compare(employee.getSalary(), getSalary()) == 0 && getId() == employee.getId() && firstName.equals(employee.firstName) && middleName.equals(employee.middleName) && lastName.equals(employee.lastName) && getFullName().equals(employee.getFullName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, middleName, lastName, getFullName(), getDepartment(), getSalary(), getId());
+    }
+
+    @Override
     public String toString() {
         return "Employee{" +
                 "firstName='" + firstName + '\'' +
@@ -55,18 +68,5 @@ public class Employee {
                 ", salary=" + salary +
                 ", id=" + id +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Employee)) return false;
-        Employee employee = (Employee) o;
-        return getDepartment() == employee.getDepartment() && Float.compare(employee.getSalary(), getSalary()) == 0 && getId() == employee.getId() && Objects.equals(firstName, employee.firstName) && Objects.equals(middleName, employee.middleName) && Objects.equals(lastName, employee.lastName) && Objects.equals(getFullName(), employee.getFullName());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(firstName, middleName, lastName, getFullName(), getDepartment(), getSalary(), getId());
     }
 }
