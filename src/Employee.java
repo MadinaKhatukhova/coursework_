@@ -20,28 +20,6 @@ public class Employee {
         this.id = ++counter;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Employee)) return false;
-        Employee employee = (Employee) o;
-        return getDepartment() == employee.getDepartment() && Float.compare(employee.getSalary(), getSalary()) == 0 && getId() == employee.getId() && Objects.equals(firstName, employee.firstName) && Objects.equals(middleName, employee.middleName) && Objects.equals(lastName, employee.lastName) && Objects.equals(getFullName(), employee.getFullName());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(firstName, middleName, lastName, getFullName(), getDepartment(), getSalary(), getId());
-    }
-
-    @Override
-    public String toString() {
-
-        return "Сотрудник №"  + id + '\n' +
-                "ФИО: " + fullName + '\n' +
-                "Отдел: " + department + '\n' +
-                "Зарплата: " + salary + '\n';
-    }
-
     public String getFullName() {
         return fullName;
     }
@@ -64,5 +42,26 @@ public class Employee {
 
     public void setSalary(float salary) {
         this.salary = salary;
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Employee)) return false;
+        Employee employee = (Employee) o;
+        return getDepartment() == employee.getDepartment() && Float.compare(employee.getSalary(), getSalary()) == 0 && getId() == employee.getId() && Objects.equals(firstName, employee.firstName) && Objects.equals(middleName, employee.middleName) && Objects.equals(lastName, employee.lastName) && Objects.equals(getFullName(), employee.getFullName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, middleName, lastName, getFullName(), getDepartment(), getSalary(), getId());
+    }
+
+    @Override
+    public String toString() {
+
+        return "Сотрудник №"  + id + '\n' +
+                "ФИО: " + fullName + '\n' +
+                "Отдел: " + department + '\n' +
+                "Зарплата: " + salary + '\n';
     }
 }
