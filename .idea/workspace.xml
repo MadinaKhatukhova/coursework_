@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="422651cb-d7d8-44a6-81d2-a52f3dde19f8" name="Changes" comment="" />
+    <list default="true" id="422651cb-d7d8-44a6-81d2-a52f3dde19f8" name="Changes" comment="исправление2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HajRkWcCZMqYTa8pQuWdimCXDY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,7 +46,72 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668530088504</updated>
+      <workItem from="1668530090588" duration="2821000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1668530285189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668530285189</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <created>1668530296339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668530296339</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1">
+      <created>1668530414298</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668530414298</updated>
+    </task>
+    <task id="LOCAL-00004" summary="исправление">
+      <created>1668601138872</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668601138872</updated>
+    </task>
+    <task id="LOCAL-00005" summary="исправление1">
+      <created>1668601531440</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668601531440</updated>
+    </task>
+    <task id="LOCAL-00006" summary="исправление2">
+      <created>1668602705906</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668602705906</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <MESSAGE value="исправление" />
+    <MESSAGE value="исправление1" />
+    <MESSAGE value="исправление2" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправление2" />
   </component>
 </project>
