@@ -27,7 +27,7 @@ public class Main {
             if (i == null) {
                 continue;
             }
-            sum += i.salary;
+            sum += i.getSalary();
         }
         System.out.println("Сумма затрат на зарплаты в месяц: " + sum);
     }
@@ -40,11 +40,11 @@ public class Main {
         for (Employee i : employee) {
             if (i == null) {
                 break;
-            } else if (i.salary < minSalary) {
-                minSalary = i.salary;
+            } else if (i.getSalary() < minSalary) {
+                minSalary = i.getSalary();
                 fullName = i.fullName;
-                department = i.department;
-                id = i.id;
+                department = i.getDepartment();
+                id = i.getId();
             }
         }
         System.out.println('\n' + "Минимальная зарплата у сотрудника №" + id + '\n' + "ФИО: " +

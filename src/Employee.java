@@ -5,10 +5,11 @@ public class Employee {
     String middleName;
     String lastName;
     String fullName;
-    int department;
-    float salary;
-    static int counter;
-    int id;
+
+    private int department;
+    private float salary;
+    private static int counter;
+    private int id;
 
     public Employee(String lastName, String firstName, String middleName, int department, float salary) {
         this.lastName = lastName;
